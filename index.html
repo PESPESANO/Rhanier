@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="assets/ccs/style.css">
+    <link rel="stylesheet" href="assets/ccs/mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/didot-2" rel="stylesheet">
+<link rel="stylesheet" href="assets/ccs/script.js">
+
+</head>
+
+<body>
+
+     <!-- Header -->
+     <div class="header">
+        <div class="site-identity">
+            <img src="assets/images/MayLogo.png" alt="My Logo image">
+            <h4>Resume</h4>
+        </div>
+        <div class="menu-container"> 
+             <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#" onclick="signupAlert()">Works</a></li>
+                <li class="menu-btn"><a href="contact.html">Contact Me</a></li>  
+            </ul>
+        </div> 
+
+        <div class="my-menu-btn">
+            <img src="assets/images/my.png" alt="" onclick="toggleMenu()">
+        </div>
+    </div>
+
+    <p id="output"></p>
+
+    <!-- Mobile Menu -->
+    <div class="menu-container-mobile"> 
+        <img class="close-btn" src="assets/images/close.png" alt="" onclick="toggleMenu()">
+        <ul class="nav-menu-mobile">
+           <li><a href="#">Home</a></li>
+           <li><a href="#about">About</a></li>
+           <li><a href="#projects">Projects</a></li>
+           <li><a href="#works">Works</a></li>
+           <li class="menu-btn"><a href="contact.html">Contact Me</a></li>  
+       </ul>
+   </div> 
+
+     <!-- Crushy / Banner -->
+    <div id="main-div" class="Crushy">
+       <div style="position: relative;">
+           <img src="assets/images/Crushy.jpg" alt="Crushy image">
+       </div> 
+       <div class="Crushy-heading">
+           <h1 class="Pespesano">John Rhanier Pespesano</h1>
+           <p class="sub-size">1st Year College In Pateros Technological College</p>
+           <div class="Crushy-Button"> 
+              <Button style="margin-right: 10px;">Hire Me</Button>
+             <button>Resume</button>
+           </div>
+           <p class="my-text">Course: Certificate Of Computer Science</p>
+       </div>
+
+    </div>
+    <div class="crushy-2" id="about">
+        <div style="position: relative;">
+            <img src="assets/images/image 1.jpg" alt="img 1">
+      </div>
+     </div> 
+
+    </div> 
+    <div class="Crush" id="projects">
+         <div style="position: relative;">
+            <img src="assets/images/Crushy 1.jpg" alt="Crushy 1">
+         </div>
+         <div>
+     </div>
+   
+    </div> 
+    <div class="awet" id="works">
+        <div style="position: relative;">
+           <img src="assets/images/My Pic.jpg" alt="My Pic">
+        </div>
+        <div>
+    </div>
+    <script>
+        function toggleMenu(){
+            document.querySelector(".menu-container-mobile").classList.toggle("active");
+        }
+    
+    function signupAlert() {
+    alert("Welcome to JavaScript!");
+    
+    // Prompt for the user's name
+    let name = prompt("What's your name?");
+    
+    if (name) {
+    // Ask for confirmation if they like JavaScript
+    let likesJS = confirm("Do you like JavaScript?");
+    
+    // Update paragraph based on user choice
+    let message = likesJS 
+        ? `Hello, ${name}! Glad you like JavaScript!`
+        : `Hello, ${name}! Hope you learn to enjoy it!`;
+    
+        let heading = document.querySelector(".hero-heading");
+                heading.textContent = message;
+                heading.style.fontSize = "50px"; /* Adjust size */
+                heading.style.fontWeight = "bold";
+                heading.style.textAlign = "center";
+    }
+      }
+    </script>
+    
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,165 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(127, 236, 255);
+    margin: 0;
+}
+.Pespesano {
+    font-family: 'Didot Title', sans-serif;
+}    
+
+.Crushy{
+    display: flex;
+    gap: 100px;
+}
+
+.Crushy img{
+    width: 300px;
+    border-radius: 20px;
+}
+                
+#main-div{
+     padding: 80px;
+}
+
+.my-menu-btn{
+    display: none;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100;
+    background-color: burlywood;
+    z-index: 9998;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.555);
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-menu a:hover{
+    color: white;
+}
+
+.site-identity{
+    display: flex;
+    align-items: center;
+}
+
+.site-identity img{
+    padding: 15px 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.Crushy-heading h1{
+    font-size: 70px;
+}
+
+.Crushy-Button button{
+    background-color: aliceblue;
+    padding: 10px 10px;
+}
+
+.menu-container-mobile{
+    display: none;
+}
+
+.menu-btn{
+    background-color: whitesmoke;
+    color:white !important;
+    padding: 10px 10px;
+} 
+
+.menu-btn a{
+    color: black !important;
+} 
+
+.menu-btn:hover{
+    background-color: aqua;
+    border-radius: 20px;
+    transition: all;
+}
+
+.menu-btn a :hover{
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.small-img{
+    position: absolute;
+    top: 100px;
+    left: -80px;
+}
+
+.sub-size{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.95);
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.Crushy-Button button{
+    padding: 15px 30px;
+    font-size: 12px;
+}
+
+.Crushy-Button button:hover{
+    background-color: aqua;
+}
+
+.my-tex{
+    font-size: 15px;
+    color: #00000000;
+    opacity: 0.10;
+    margin-top: 20px;
+}
+
+.crushy-2 p{
+    font-size: 50px;
+}
+
+.crushy-2 img{
+    height: 400px;
+    width: 400px;
+    align-items: center;
+}
+
+.ren-ren{
+    font-display: 10px;
+}
+
+.Crush p{
+    font-size: 30px;
+}
+.Crush img{
+    height: 400px;
+    width: 400px;
+    align-items: center;
+}
+
+.awet{
+    font-size: 200px;
+}
+
+.awet img{
+    height: 400px;
+    width: 400px;
+    align-items: center;
+}

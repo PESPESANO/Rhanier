@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://wallpaperaccess.com/full/1696255.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    color: white;
+    position: relative; /* Set position relative for absolute children */
+}
+
+/* Container with Blur Effect */
+.container {
+    background: rgba(255, 255, 255, 0.2); /* Transparent white background */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 450px; /* Maximum width of the container */
+    width: 90%; /* Responsive width */
+    text-align: left; /* Aligns content inside to the left */
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ensure form takes full width of container */
+}
+
+/* Align labels to top-left */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    max-width: 100%; /* Ensures it doesn't exceed the container */
+    padding: 10px;
+    margin: 0 auto 15px; /* Center horizontally and add bottom margin */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+textarea {
+    resize: none; /* Prevents resizing */
+    min-height: 100px; /* Sets a minimum height */
+}
+
+/* Ensuring labels and inputs are top-left aligned */
+label,
+input,
+textarea {
+    text-align: left;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Hide Submitted Data Initially */
+#submitted-data {
+    display: none;
+}
